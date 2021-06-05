@@ -1,17 +1,24 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MaterialApp(
+    title: "pre6",
+    home: HomaPage(),
+  ));
 }
 
-class MyApp extends StatelessWidget {
+class HomaPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("pre6"),
+        title: Text("Pre6"),
       ),
-      body: Container(),
+      body: Container(
+        child: Center(
+          child: Text("hello"),
+        ),
+      ),
     );
   }
 }
